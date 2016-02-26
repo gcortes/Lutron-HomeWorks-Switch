@@ -1,5 +1,9 @@
 # Lutron-HomeWorks-Switch
-This is a SmartThings Device Handler that will work with any server on a LAN local to it that supports its protocol. There is a campanion project that provide a compatible web service.
+This is a SmartThings Device Handler that will work with any server on a LAN local to it that supports its protocol. There is a [campanion project](https://github.com/gcortes/Lutronic) that provides a compatible web service.
+
+This handler and it's companion service onluy support older Lutron Homeworks controllers. It does not support the new Homeworks QS series as it has a different interface. Funtionaly is also limitied to simulating the press of a key pad button and testing it's corresponding led indicator to determine if the funtion it supports is active or inactive. Since buttons can be programmed to do many different things, this isn't much of a limitation.
+
+You will have to install this device handler and create devices for each button you wish to control. You will also have to install the web service unless you wish to write your own. The service is written in Ruby and may require an upgrade of the Ruby interupter. In addition Ruby gems mush be installed. The process is usually straight forward assuming you are comfortable using console access. Additionally, the web service has only been tested with OS X. It most likely will run fine under Linux. Windows may be more problematic.
 
 ## Installation
 
@@ -34,7 +38,14 @@ This is a SmartThings Device Handler that will work with any server on a LAN loc
 8. Enter the Switch Address. See the Lutronic readme on how to obtain this
 9. Enter the Button number. See the Lutronic readme on how to obtain this.
 10. Click done.
-11. To test, click the Refresh button while watching the console screen you should see a message saying switch:on or switch:off
+ 
+### Set Up the Web Service
+
+See the [Lutronic repository](https://github.com/gcortes/Lutronic) for instructions
+
+### Testing
+
+To test, click the Refresh button while watching the console screen you should see a message saying switch:on or switch:off
 
 ## Usage
 
