@@ -14,6 +14,8 @@ You will have to install this device handler and create devices for each button 
 3. Click the green Create New Device Handler button at the right.
 4. Click the From Code tab.
 5. Copy the entire contents of ? from this reposorty into the code window and click the Create button.
+6. Click the Save button
+7. Click the Publish button and select For Me.
 
 ### Create the Device
 
