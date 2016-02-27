@@ -7,24 +7,28 @@ You will have to install this device handler and create devices for each button 
 
 ## Installation
 
+### Set Up the Web Service
+
+See the [Lutronic repository](https://github.com/gcortes/Lutronic) for instructions. It also explains how to get information you will need in the SmartThings setup below.
+
 ### Create the Device Handler
 
 1. Sign in to your [SmartThings API](graph.api.smartthings.com)
 2. Select My Device Handlers.
 3. Click the green Create New Device Handler button at the right.
 4. Click the From Code tab.
-5. Copy the entire contents of ? from this reposorty into the code window and click the Create button.
-6. Click the Save button
+5. Copy the entire contents of LHW-Switch.groovy from this reposorty into the code window and click the Create button at the bottom.
+6. Click the Save button above the code.
 7. Click the Publish button and select For Me.
 
 ### Create the Device
 
 1. Sign in to your [SmartThings API](graph.api.smartthings.com) if you are not already logged in
 2. Select the My Devices tab.
-3. Clich the green New Device button at the right
+3. Click the green New Device button at the right
 4. Give your switch a name (e.g., Living Room Lights)
-5. Enter the network id of your Lutron controller. This field is not useds by the app so doesn't have to be accurate.
-6. On the Type list select Lutron Homeworks Swith, which should be at the bottom.
+5. Enter the network id of the computer running the Web service. This field is not used by the app so doesn't have to be accurate.
+6. On the Type list select Lutron Homeworks Switch, which should be at the bottom.
 7. Enter optional fields as you see fit
 8. Click create
 
@@ -34,17 +38,13 @@ You will have to install this device handler and create devices for each button 
 2. Select the Things tab.
 3. Find the Device you just created by the name you gave it above.
 4. Click on the three dots in the upper right hand corner of the screen and select Edit Device.
-5. Enter the IP address of the device running the web service.
-6. Enter a free port number for this device. This must be unique for the server.
-7. Leave the Switch Type as K. This is for future expansion
-8. Enter the Switch Address. See the Lutronic readme on how to obtain this
+5. Enter the IP address of the device running the web service. It has to be correct here.
+6. Enter a free port number for this device. This must be unique.
+7. Leave the Switch Type as K. Additional option my be added in future versions
+8. Enter the Switch Address. See the Lutronic readme on how to obtain this.
 9. Enter the Button number. See the Lutronic readme on how to obtain this.
 10. Click done.
  
-### Set Up the Web Service
-
-See the [Lutronic repository](https://github.com/gcortes/Lutronic) for instructions
-
 ### Testing
 
 To test, click the Refresh button while watching the console screen for the web service you should see a message saying switch:on or switch:off
