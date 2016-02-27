@@ -68,7 +68,3 @@ Version 0.1 - Beta release
 ## Credits
 
 William (Curt) Rowe
-
-## License
-
-TODO: Write license
