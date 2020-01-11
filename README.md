@@ -1,4 +1,8 @@
 # Lutron-HomeWorks-Switch
+
+I no longer have the Lutron controller to which this software communicates. As such, I no longer maintain this code.
+
+
 This is a SmartThings Device Handler that will work with any server on a LAN local to it that supports its protocol. There is a [campanion project](https://github.com/gcortes/Lutronic) that provides a compatible web service.
 
 This handler and it's companion service only support older Lutron Homeworks controllers. It does not support the new Homeworks QS series as it has a different interface. Functionaly is also limitied to simulating the press of a key pad button and testing it's corresponding led indicator to determine if the funtion it supports is active or inactive. Since buttons can be programmed to do many different things, this isn't much of a limitation.
